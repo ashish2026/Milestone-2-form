@@ -26,7 +26,24 @@
                     .login-form {
                               display: flex;
                               flex-direction: column;
-                              width: 50%;
+                              width: 30%;
+                    }
+                    .head-title{
+                              color: rebeccapurple;
+                              height: 10px;
+                              display: flex;
+                              justify-content: center;
+                              padding: 10px;
+
+                    }
+                    .login-btn{
+                              background-color: blue;
+                              color: aliceblue;
+                    }
+                    .nav-bar{
+                              justify-content: space-around;
+                              justify-items: center;
+
                     }
 
                     /* border: 2px solid tomato; */
@@ -39,7 +56,7 @@
 
 <body>
           <nav>
-                    <div>
+                    <div class="nav-bar">
                               <a href="">Home</a>
                               <a href="">Profile</a>
                               <a href="">Blog</a>
@@ -49,10 +66,10 @@
           </nav>
           <section class="login-form-container">
                     <form class="login-form">
-                              <h3>Please Login</h3>
+                              <h3 class="head-title">Please Login</h3>
                               <input type="email" placeholder="Your Email" required>
                               <input type="password" placeholder="Your Password" required>
-                              <input type="submit" value="Login">
+                              <input class="login-btn" type="submit" value="Login">
                     </form>
           </section>
 </body>
